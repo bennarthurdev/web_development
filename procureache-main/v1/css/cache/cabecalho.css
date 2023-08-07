@@ -1,0 +1,77 @@
+/** BEM CSS **/
+.cabecalho{
+	letter-spacing: 0.23em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:0.6rem;/*medida relativa:Rem*/
+	text-align:center;
+	background-color:#FF1616;
+	color:#fff;
+}
+
+.cabecalho__menu{
+	/*display: inline-block;ocupa o espaço do conteudo e aceitará formatações e espaçamentos*/
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap:wrap;	
+	background: rgb(255, 0 , 20);
+}
+.cabecalho__item--menu{
+	display: inline-block;
+}
+.cabecalho__item--menu a{
+	display: inline-block;
+	padding: 1.86em 1.42em;
+}
+/**CONFIGURAÇÕES DO LAYOUT RESPONSIVO **/
+/*a partir de 640px */
+@media (min-width:640px){
+	.cabecalho{
+		display:flex;
+		justify-content: space-between;/*crie um espaçamento ENTRE os elementos*/
+		align-items:center;/*Alinhe todos os elementos do cabecalho ao centro */
+	}
+	.cabecalho__logo{
+		padding:2.5em 0;/*Espaçamento relativo em relação ao elemento pai */
+	}
+	.cabecalho__menu{
+		background-color: transparent;
+	}
+	.destaque{
+		border-radius:6px;
+		margin-left:1.42em;/*espaçamento externo de 1.42 em relação ao elemento pai (ul)*/
+		background-color: rgb( 0 , 0 ,255);
+	}
+
+}
+
+/*a partir de 770px*/
+@media (min-width:770px){
+	.cabecalho__item-menu--registrar{
+		margin-left:1.42em;/*Crie um espaçamento externo a esquerda de 1.42 em relação ao elemento pai*/
+		border-radius:6px;
+		background-color: #272B3A87;
+	}
+	.cabecalho__item-menu--registrar a{
+		padding:1.8em 3.5em;/*crie um espaçamento externo acima e abaixo de 1.8 e aos lados de 3.5*/
+
+	}
+}
+/*a partir de 1066px*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

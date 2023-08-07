@@ -1,0 +1,42 @@
+@keyframes navbar_entry{
+    from{
+        width:0;
+        display: inline-block;
+        
+    }
+    to{
+        width:100%;
+        display:block;
+    }
+}
+@keyframes search_input_entry{
+    from{
+        width:0;
+        display:inline-block;
+    }
+    to{
+        width:100%;
+        display:block;
+    }
+}
+@keyframes to_emerge{
+    from{
+        color:rgba(0,0,0,0);
+    }
+    to{
+        color:rgba(0,0,0,1);
+    }
+}
+.color{
+    animation:search_input_entry;
+}
+.navbar-editions{
+    animation:navbar_entry 3s 0s 1 alternate;
+}
+.search_in_website{
+    width:25%;
+    height:auto;
+}
+.search_in_website--animations{
+    animation:search_input_entry 3s 0s 1 alternate;
+}

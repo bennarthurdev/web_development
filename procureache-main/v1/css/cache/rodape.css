@@ -1,0 +1,130 @@
+.rodape{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	text-transform: lowercase;
+	text-align:center;
+	font-size:0.7rem;/*tamanho em relação ao html*/
+}
+/**LOGO **/
+.rodape__logo{
+	width:11.25em;
+	margin-bottom: 1em;
+}
+.rodape__lista--midias-sociais {
+	display:flex;
+	justify-content:center;/*centralizar os elementos da lista de midias sociais dentro de um display do tipo flex*/
+	margin-top:1em;
+}
+.rodape__info--empresa{
+	line-height: 1.5em;/*Cria um espaçamento entra as linhas de 1.5em */
+}
+/*
+.rodape__logo-imagem{
+	width: 100%;
+	height: 100%;
+}*/
+
+.rodape__lista-midias-sociais{
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+.rodape__item--midias-sociais{
+	width: 2.6em; /*cada item conterá a largura em relação ao elemento pai */
+	margin:0em .25em;
+}
+.rodape__item--midias-sociais img{
+	width: 100%;
+	 /*as imagens devem ocupar 2.6em0*/
+}
+/**TEXTO INFERIOR A LOGO **/
+
+.rodape__titulo{
+	margin-bottom: 1em;
+	font-size: 1.45em;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.rodape__item-lista{
+	font-weight: 500;/*o "peso dos itens da lista" */
+	margin:0.625em 0;
+}
+/*
+@media max-width: (720px){
+.rodape__item-lista a{
+	font-size: 1em;
+	background-color: #fff;
+}
+.rodape__item-lista a:hover{
+	font-size: 1.25em;
+	margin:1.75em 0;
+	color: #fff;
+	background-color: rgb(0,0,30);
+}
+}
+*/
+/*Limitar até 1200px afim de não ter de sobrescrever todos os elementos */
+@media (max-width: 640px) and (max-width: 1200px){
+	.rodape__secao + .rodape__secao {
+	margin-top: 2em;
+	}
+}
+@media(min-width: 640px){
+	.rodape{
+		display: flex; 
+		flex-wrap: wrap;
+		justify-content: space-between; /*Crie espaçamento entre o conteúdo.*/
+		font-size: 1rem;
+	}
+}
+.rodape__secao--sobre, .rodape__secao--servicos, .rodape__secao--links, .rodape__secao--newsletter{
+	width: 45%;
+}
+.rodape__secao--servicos{
+	order: 1;
+	margin: 0;
+}
+.rodape__secao--links{
+	order: 2;
+	margin: 0;
+}
+.rodape__secao--sobre{
+	order: 3;
+	margin-top: 2em;
+}
+.rodape__secao--newsletter{
+	order:4;
+	margin-top:2em;
+}
+@media(min-width: 1200px){
+	.rodape{
+		display:flex;
+		justify-content:space-between;
+		font-size:0.85rem;
+		text-align:left;
+	}
+	.rodape-titulo{
+		font-size: 1em;
+	}
+	.rodape__lista-midias-sociais{
+		justify-content:left;
+	}
+	.rodape__secao{
+		margin-top:0;
+	}
+	.rodape__secao + .rodape__secao{
+		margin-left:2em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

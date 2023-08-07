@@ -1,0 +1,55 @@
+/**SET VAR COLORS**/
+:root {
+    --main-red:#B40505;
+    --secondary-red:rgb(239, 35, 60);
+    --dark-color:rgb(43, 45, 66);
+    --dark-gray:rgb(43, 45, 66);
+    --light-gray:rgb(237, 242, 244);
+}
+#home{
+    background-color: #B40505;
+    color: var(--light-gray);
+}
+.table-costum-color-red{
+    background-color: var(--main-red);
+    color:var(--light-gray);
+}
+.costum-text-color-white{
+    color: var(--light-gray);
+}
+.costum-color-black{
+    color:var(--dark-color);
+}
+/*Modify the background color*/
+.navbar-custom{
+    background-color: var(--main-red);
+}
+/*Modify brand and the text color*/
+.navbar-custom .navbar-brand , .navbar-custom .navbar-text{
+    color:var(--dark-gray);
+}
+
+/*HAMBURGUER BUTTON*/
+.container{
+    display: inline-block;
+    cursor:pointer;
+}
+
+.bar1, .bar2 , .bar3{
+    width: 25px;
+    height: 3px;
+    background-color: var(--light-gray);
+    margin: 6px 0;
+    transition:0.4s;
+}
+
+.change .bar1{ /*GIRA A BARRA1 */
+    -webkit-transform: rotate(-45deg) translate(-9px,6px);
+    transform:rotate(-45deg) translate(-9px , 6px);
+}
+.change .bar2{opacity:0;}/*ESCONDE A BARRA2 */
+
+.change .bar3{ /*GIRA A BARRA 3 */
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "RETURN"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennarthurpy/escritorio.git"
+  },
+  "author": "Benn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bennarthurpy/escritorio/issues"
+  },
+  "homepage": "https://github.com/bennarthurpy/escritorio#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

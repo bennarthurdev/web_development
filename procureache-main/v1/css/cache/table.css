@@ -1,0 +1,34 @@
+#table{
+    width:100%;
+    color:white;
+    
+}
+#td_data_evaluation{
+    width: 5%;
+}
+.electricians_table, .th_data, .td_data {
+    border:1px white solid;
+    border-collapse: collapse;
+    border-radius:10px;
+}
+.th_data , .td_data{
+    background-color: black;
+    text-align: center;
+    padding:15px;
+}
+
+/*
+NEW RESOURCES: 
+
+tr:nth-child(even) {
+  background-color: rgb(255,100,100);
+} -> tyling will occur on row 2,4,6,...
+tr:nth-child(odd){
+  background-color:rgb(100,100,255)
+} styling will occur on row 1,3,5,...
+
+*/
+
+/*
+* background-color: rgba(150, 212, 212, 0.4); /*rgba - rgb + specify the transparency of the color: */
+*/

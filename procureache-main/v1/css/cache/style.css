@@ -1,0 +1,42 @@
+/*1-Criar classes necessárias para a estilização*/
+/*2- Criar na ordem adequada de execução do código*/
+/*3- Escolher fonte */
+/*4- criar uma quebra de linha no label*/
+/*5- Estilizar as entradas de dados */
+/*6- Estilizar o botão*/
+/*7- Estilizar esqueceu senha?*/
+/*IMPORTANDO FONTES*/
+/*{
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+	font-family: 'PT Sans', sans-serif;
+	background: #fff url("../images/bg-pixel.jpg");
+	margin:15px;
+}
+/**CONTAINER
+#container{
+	background: #f8eeee;
+}
+TOPO /
+#header{
+	background: #c2d8fd;
+	height: 15.4em;
+	min-height: 150px;
+	}
+#logo-area{
+	width: 100%;
+	height: 250px;
+}
+#area-menu{
+	width: 450px;
+	height: 250px;
+}
+/**FINAL TOPO **/
+
+
+
+
+

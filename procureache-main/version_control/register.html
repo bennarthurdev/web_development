@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Procure&ache.com</title>
+	<!--ICON-->
+	<link rel="icon" href="images/searchicon.png">
+	<!--Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" contet = "width=device-width, initial-scale=1">
+	<!--BOOTSTRAP5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--BOOTSTRAP CSS-->
+	<!--CSS COSTUM CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/animations.css"></link>
+	<script src="app.js"></script>
+</head>
+<body>
+	
+<header> <!--HEADER-->
+		
+	
+	<header> <!--HEADER-->
+		
+			
+		<nav class="navbar navbar-expand-lg navbar-custom">
+			<div class="container-fluid d-flex " style="border: 2px black solid;">
+			<a class="navbar-brand ms-4" href="#"><img src="images/logo.png" alt="logo"></a>
+			<!-- HAMBURGUER BUTTON-->
+				<a class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbarNav" role="button"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<div id="hamburguer-button" class="container" onclick="myFunction(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</a>
+				
+			<!--FINAL HAMBURGUER BUTTON-->
+			
+			<div class="collapse navbar-collapse " id="navbarNav">
+				
+				<ul class="navbar-nav ms-auto" style="border: 2px black solid;">
+					<li class="nav-item">
+						<a class="nav-link costum-text-color-white" href="index.html" >Home</a>
+					</li>
+					<li class="nav-item costum-text-color-white " style="border: 2px black solid;">
+						<a class="nav-link active costum-text-color-white justify-content-center" aria-current="page" href="tables.html" >Consultar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link costum-text-color-white" href="register.html" >Registrar</a>
+					</li>
+					
+				</ul>
+			</div>
+	
+			</div>
+		</nav>
+	
+		</header> <!--FINAL HEADER -->
+
+	</div>
+
+
+</header> <!--FINAL HEADER -->
+
+<!--MAIN -->
+<div class="row">
+<main>
+	<!-- ENTRADAS PARA CADASTRAR O USUÁRIO-->
+	
+	<div class="container-fluid  justify-content-center">
+      <div class="row ">
+        <div class="col mb-5">
+          <h1 class="display-4">Registro de novo usuário</h1>
+        </div>
+ 
+	
+	<div class="border border-3 rounded-3 border-danger">
+    
+	<div class="row justify-content-center mb-2">
+        <div class="col-xs-6 col-sm-8 col-md-6 col-lg-6 mb-3">
+		  <label for = "name"> Digite seu nome completo no campo abaixo* </label>
+          <input id="name" class="form-control" type="text" placeholder ="Nome Completo" >
+        </div>
+	</div>
+		
+		<div class = "row justify-content-center mb-2">
+			<div class=" col-xs-6 col-sm-8 col-md-6 col-lg-6 mb-3">
+			  <label for="email">Seu melhor e-mail *</label>
+			  <input id="email" class="form-control" type = "email" placeholder="exemplo@seumail.com">
+			</div>
+		</div>
+        
+		<div class = "row justify-content-center mb-2">		
+			<div class="col-xs-6 col-sm-8 col-md-6 col-lg-6 mb-3">
+			  <label for="emailCheck">Confirmação do email*</label>
+			  <input  id="emailCheck" class="form-control" type = "email" placeholder="exemplo@seumail.com">
+			</div>
+		</div>
+		
+		<div class = "row justify-content-center mb-2">
+			<div class="col-xs-6 col-sm-8 col-md-6 col-lg-6 mb-3">
+			  <label for="password">Escolha uma senha de acesso *</label>
+			  <input  id="password" class="form-control" type = "password" placeholder="*********">
+			</div>
+		</div>
+		<div class = "row justify-content-end mb-2">
+			<div class="col-xs-6 col-sm-8 col-md-6 col-lg-6 mb-3" >
+			  <button type="button" class="btn btn-primary" onclick="setRegister()">
+				<span> > </span>
+			  </button>
+			</div>	
+		</div>
+	</div>
+		
+     </div>
+    </div>
+</div>
+			<!--BOOTSRAP SCRIPTS-->
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

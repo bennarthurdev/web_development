@@ -1,0 +1,62 @@
+/***RECEBA AS NOVIDADES NO E-MAIL ***/
+.form-newsletter{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow: hidden;/*Caso o conteúdo "transborde", ele será ocultado */
+	box-sizing: border-box;
+
+	border-radius: 7px;
+	border: 2px solid #e93d50;
+	background-color: #e93d50;
+	background-size: cover;
+}
+.form__newsletter--label{ /*label */
+/*"Expulsar a Label jogando-a para uma posição não visível para o usuário, ainda que ela esteja presente no html por questões de semântica"*/
+	position:absolute;
+	left:-10000px; /*"lançar" para fora do overview.*/
+	width: 1px;
+	height:1px;/**para que o overflow funcione **/
+	overflow: hidden;
+}
+.formulario__newsletter--campo-entrada{
+	padding: .6rem .4rem;
+	flex-grow: 1;
+	border: none;	
+
+}
+.formulario__newslatter--botao-enviar{
+	flex-grow: 1;
+	border: none;
+	font-weight: 600;
+	background-color: rgb(20,0,240);
+	text-transform: uppercase;
+	color: rgb(250,250,250);
+}
+/***DÚVIDAS***
+*Qual o funcionamento das propriedades:
+-Overflow?
+-Box-sizing?
+-Flex-grow
+*Utilizar RGB ou Hexadecimal?
+*Como usar as tags HTML:
+-form
+-label
+-input -- como usar os dados aqui obtidos para criar um banco de dados?
+Como utilizar essas tags para criar um formulário de registro online.
+*/
+
+
+/*** ORDEM DE CRIAÇÃO ***/
+/*0-Criar as classes Css de acordo com o conteúdo que queremos inserir */
+/*1-Configurações de Texto */
+/*2-Configurações de Display */
+/*3-Configurações de Espaçamento*/
+
+/**CRIANDO UM CAIXA PARA RECEBER O E-MAIL
+* 1-)Possui 3 partes: Label, campo e botão;
+* 2-)Adicione uma sessão
+* 3-)Adicione um título para a Caixa
+* 4-)adicione a tag form que contém: LABEL | INPUT | BUTTON;
+* 5-)
+ **/
