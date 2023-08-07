@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic tutorial</title>
+</head>
+<body>  
+    
+    <!-- Don't use div to create header, but use the semantic element instead, follow the example bellow-->
+    <header> <!-- This means to SE who it's the header of page-->
+
+         <!--
+         1- Use just one <h1> tag
+        <h1> means the more import markup text in this file -->
+        <nav>
+            <h1>More important keyword here, can be the name of page, for example</h1>
+        </nav>
+
+    </header>
+   
+    <main>
+     
+        <!--
+            2- Don't skip heading levels in html, for example, never jump <h1> to <h3> 
+        -->
+        <article>
+            <h2>Less important</h2>
+            <section>
+                <h3> less important</h3>
+                <!--Use the figure element to add captions to your images in html-->
+                <figure>
+                    <img alt="a man working on his computer" src="data:image/jpeg;base64,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">
+                    <figcaption>Coding man</figcaption>
+                </figure>
+
+                <p>This can be for example the text of an blog post, ,<strong> in this cases for highlights texts use strong or</strong> <em>em</em></p>
+            </section>
+
+            <!--Don't place block-level element within inline elements-->
+            <h2>Second section</h2>
+            <section>
+                <a href="#"><p>Don't ever do it!</p></a>
+                <p>But you can do it and put <a href="#">the link inside</a> of block element, because <'a'> is an inline element ></p>
+            </section>
+            
+        </article>
+        
+    </main>
+ 
+    <!-- Again, never use div to create a footer, but use the semantic element instead-->
+    <footer>
+        <ul>
+            <li>footer element 1 </li>
+            <li>footer element 2 </li>
+        </ul>
+    </footer>
+</body>
+</html>

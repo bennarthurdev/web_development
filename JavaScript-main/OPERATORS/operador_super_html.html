@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/javascript">
+
+      class Animal {
+        constructor(cor,tamanho,peso) {
+          this.cor = cor
+          this.tamanho = tamanho
+          this.peso = peso
+        }
+
+        dormir() {
+          console.log('Dormir');
+        }
+        
+      }
+      class Passaro extends Animal {
+        constructor(bico) {
+          super();
+          this.bico = bico;
+        }
+
+        voar() {
+          console.log('Voar')
+        }
+
+      }
+
+      class Papagaio extends Passaro {
+        constructor(sabeFalar,cor,tamanho,peso) {
+          super(cor, tamanho , peso)//data received at moment of instance are created.
+          this.sabeFalar = true
+        }
+
+        falar() {
+          console.log('Falar')
+        }
+      }
+      class Avestruz extends Passaro{
+        constructor(){
+          super();
+        }
+        enterrarCabeca(){
+          console.log('Enterra a Cabeça')
+        }
+        /*By default, super() will intehance the voar() method by ParentClass*/
+        //we can change this method in this class by using 
+        voar(){
+          console.log('Avestruz não voa!')
+        }      
+      //getData
+      let bool_data = Array();
+      let color_data = Array();
+      let size_data = Array();
+      let fat_data = Array();
+      //createUserInstances
+      let range = 100
+      let papagaios = Array()
+      for (n = 0; n < range; ++n){
+        papagaio[n] = new Papagaio(bool_data[n], color_data[n],size_data[n], fat_data[n])
+      }
+      //let papagaio = new Papagaio(boll , cor , tam[cm] peso[kg])
+    </script>
+    
+  </head>
+  <body>
+    <div id="output"></div>
+  </body>
+</html>

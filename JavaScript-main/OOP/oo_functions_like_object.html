@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>functions</title>
+		<script type="text/javascript">
+			//
+			let object = function(){
+				var maxSpeed = 180;//private
+				var mileage = 0; //private
+				//propieties
+				this.model = 'fiat';
+				this.color = 'blue';
+				this.actualSpeed = 0;
+				//methods, public methods
+				this.moreSpeed = () => {
+					let Speed = this getSpeed() + 50
+					if(Speed > maxSpeed){
+						Speed = maxSpeed;
+					}
+					this.setSpeed(Speed)
+
+					setMiliage(0.07)
+					console.log(mileage);
+				}
+				this.getSpeed = () => {
+					return this.actualSpeed 
+				}
+				this.setSpeed = (actualSpeed) => {
+					this.actualSpeed = actualSpeed //update the atributte with var value
+				}
+				//methods, private methods
+				var setMiliage = (m) =>{
+					mileage += m
+				}
+			}
+		</script>
+	</head>
+</html>

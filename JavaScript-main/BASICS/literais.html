@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Literais</title>
+	<script type="text/javascript">
+	let getDataForm = () =>{
+		var nome = document.getElementById("Iname").value,
+		idade = document.getElementById("Iidade").value,
+		sexo = document.getElementById("Isexo").value,
+		profissao = document.getElementById("Iprofissao").value,
+		resumo = document.getElementById("resumeContainer").style,
+		texto = document.getElementById("texto").value;
+		var object = {
+			nome,
+			idade,
+			sexo,
+			profissao,
+			exibirResumo:() =>{
+				resumo = 'visible';
+				getElementById("texto-a-exibir").value = texto;
+			}
+		}
+		object.exibirResumo();
+	}	
+	
+	
+	
+
+	</script>
+</head>
+<body>
+	<form>
+		<label>Nome:</label><input type="text" id="Iname" ><br>
+		<label type="checkbox" id="Isexo">Sexo:</label><br>
+		<label>Idade:</label><input type="text" id="Iidade"><br>
+		<label>Profissão:</label><input type="text" id="Isexo"><br>
+		<label>Faça seu resumo:</label>
+		<textarea id="texto">
+			
+		</textarea>
+		<button onclick="getDataForm()">Enviar</button>
+		<div style="visibility: hidden;" id="resumeContainer">
+			<h3 >Resumo</h3>
+			<p id="texto-a-exibir"></p>
+		</div>
+	</form>
+</body>
+</html>

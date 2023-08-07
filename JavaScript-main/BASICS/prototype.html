@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var RANDOM = Math.random();
+        
+        //literal object
+        let user = {
+            //propiedades
+            name: 'Benn' ,
+            id : RANDOM ,
+            //métodos
+            submitForm : () => {
+                console.log("Data sended with sucsess!");
+            }
+        }
+        //constructor function    
+        let premiumUser = () => {
+            this.name = 'Bruna',
+            this.id = RANDOM,
+            this.submitForm = () => {console.log("Data sended with sucsess!")}
+        }
+
+        //class
+        class goldUser{
+            constructor(){
+                this.name = 'Renato', 
+                this.id = FORM;
+            }
+            submitForm(){
+                console.log("Data sended with sucsess!");
+            }
+
+        }
+            
+    </script>
+</body>
+</html>
